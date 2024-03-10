@@ -63,7 +63,7 @@ const Home = () => {
   <ul className='hidden md:flex md:space-x-10'>
     <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='/'>Home</Link></li>
     <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='#About'>About</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='#About'>Opportunities</Link></li>
+    <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='#Opp'>Opportunities</Link></li>
   </ul>
   <button className="md:hidden focus:outline-none" onClick={handleClick}>
         {active ? (
@@ -81,7 +81,7 @@ const Home = () => {
   <ul className='flex text-4xl items-center space-y-20 flex-col md:space-x-10 bg-inherit'>
     <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink} className='bg-inherit'  href='/'>Home</Link></li>
     <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#About'>About</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opportunities'>Opportunities</Link></li>
+    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opp'>Opportunities</Link></li>
   </ul>
 </nav>
 
@@ -199,7 +199,7 @@ Join us to unleash your creativity, collaborate with like-minded individuals, an
 
 
 
-<div id='About' className='w-full my-10 md:h-96 flex flex-col items-center justify-center px-8 md:px-16 space-y-8'>
+<div id='Opp' className='w-full my-10 md:h-96 flex flex-col items-center justify-center px-8 md:px-16 space-y-8'>
       <h1 className='text-4xl font-serif font-bold'>Opportunities</h1>
       <p className=' text-md md:text-xl font-sans'>
 
