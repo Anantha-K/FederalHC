@@ -103,9 +103,9 @@ const Home = () => {
       <h1 className='text-4xl font-serif font-semibold'>About</h1>
       <p className=' text-md md:text-xl font-sans'>
 
-Welcome to the Game Development Club! We're passionate about exploring cutting-edge design technologies like VR, AR, 3D modeling, and game development. Our mission is to empower members with the skills and knowledge to thrive in these fields through hands-on training, workshops, and internship opportunities.
+Welcome to the Game Development Club!  We&apos;re passionate about exploring cutting-edge design technologies like VR, AR, 3D modeling, and game development. Our mission is to empower members with the skills and knowledge to thrive in these fields through hands-on training, workshops, and internship opportunities.
 
-Join us to unleash your creativity, collaborate with like-minded individuals, and shape the future of design technologies. Let's innovate together!</p>
+Join us to unleash your creativity, collaborate with like-minded individuals, and shape the future of design technologies. Let&apos;s innovate together!</p>
 
 
     </div>
