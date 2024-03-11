@@ -92,7 +92,7 @@ const Home = () => {
     {/* landing */}
     <div className='bg-white w-full flex items-center justify-center mt-0 md:mt-9 flex-col h-46 md:h-[700px] relative'>
   <Image src={ld} alt='' className='w-full h-46 md:h-[700px]'/>
-  <h1 className='text-4xl md:text-7xl text-white bg-none -translate-y-12 md:-translate-y-96 '>Federal Horizon Club</h1>
+  <h1 className='text-4xl md:text-7xl text-white bg-none -translate-y-12 md:-translate-y-96 '>Federal Horizon Development</h1>
 </div>
 
 
