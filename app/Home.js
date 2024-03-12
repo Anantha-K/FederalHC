@@ -210,9 +210,9 @@ Join us to unleash your creativity, collaborate with like-minded individuals, an
     <footer className='w-full border-t-2 border-gray-200 py-3 mt-5 h-36 md:h-24 justify-between items-center px-5 flex flex-col md:flex-row'>
       <Image src={logo} alt='' className='h-[50px] w-[50px] md:h-[60px] md:w-[70px]'/>
       <ul className='flex space-x-5 text-4xl'>
-        <FaInstagram className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
-        <FaLinkedin className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
-        <FaSquareXTwitter className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
+        <Link href='https://youtu.be/S2Uxof4immk?feature=shared'><FaInstagram className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/></Link>
+        <Link href='https://youtu.be/o33k8Vkebyc?feature=shared'><FaLinkedin className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/></Link>
+        <Link href='https://youtu.be/Lpmtt-5m1yo?feature=shared'><FaSquareXTwitter className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/></Link>
       </ul>
 
       
