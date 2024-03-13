@@ -179,7 +179,7 @@ Join us to unleash your creativity, collaborate with like-minded individuals, an
           <h3 className="mt-4 text-xl font-medium sm:text-2xl">Game Development</h3>
 
           <p className="mt-4 text-sm sm:text-base">
-            Practical guidance on game design, programming, and development using industry-standard tools, languages & engines like Unreal, Unity, C#, C++, etc
+            Practical guidance on game design, programming, and development using industry-standard tools, languages & engines like Unreal,Blender,Unity, C#, C++, etc
           </p>
         </div>
       </div>
