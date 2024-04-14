@@ -2,9 +2,9 @@
 import Image from '@/node_modules/next/image'
 import React, { useState } from 'react'
 import Lottie from 'react-lottie'
-import logo from './assets/FHD.png'
 import animationData from './assets/VR.json'
 import animationData2 from './assets/Gam.json'
+import logo from './assets/FHD.png'
 
 import animationData3 from './assets/AR.json'
 import Link from 'next/link'
@@ -16,7 +16,6 @@ import ld from './assets/ld.JPG'
 
 
 const Home = () => {
-  const [active, setActive] = useState(false)
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -41,58 +40,18 @@ const Home = () => {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
-  const handleClick=()=>{
-    setActive(!active);
-    document.body.classList.toggle('overflow-hidden'); 
-  document.body.classList.toggle('fixed'); 
-
-  }
-  const handleLink=()=>{
-    setActive(!active);
-    document.body.classList.toggle('overflow-hidden'); 
-    document.body.classList.toggle('fixed'); 
-
-
-
-  }
+ 
   return (
     <>
 
-<nav className='w-full  bg-white h-16 flex items-center justify-between px-4 md:px-12 shadow-lg border-b-2  border-gray-300'>
-  <Image className='cursor-pointer' src={logo} height={40} alt=''/>
-  <ul className='hidden md:flex md:space-x-10'>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='/'>Home</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='#About'>About</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition duration-150'><Link href='#Opp'>Opportunities</Link></li>
-  </ul>
-  <button className="md:hidden focus:outline-none" onClick={handleClick}>
-        {active ? (
-          <svg className="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        ) : (
-          <svg className="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        )}
-      </button>
-</nav>
-<nav className={` ${active ? 'flex' : 'hidden'} ${active ? 'left-0' : '-left-full'} h-screen font-serif bg-gray-200 w-full items-center justify-center z-10 flex-col transition-transform duration-5000 delay-100 ease-in`}>
-  <ul className='flex text-4xl items-center space-y-20 flex-col md:space-x-10 bg-inherit'>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink} className='bg-inherit'  href='/'>Home</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#About'>About</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opp'>Opportunities</Link></li>
-  </ul>
-</nav>
+
 
 
 
 
 
     {/* landing */}
-    <div className='bg-white w-full flex items-center justify-center mt-0 md:mt-9 flex-col h-46 md:h-[700px] relative'>
-  <Image src={ld} alt='' className='w-full h-46 md:h-[700px]'/>
-  <h1 className='text-2xl text-semibold md:text-7xl text-white bg-none -translate-y-12 md:-translate-y-96 '>Federal Horizon Development</h1>
+    <div className='bg-black w-full z-0 flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
 </div>
 
 
