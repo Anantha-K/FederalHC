@@ -58,16 +58,10 @@ const Home = () => {
 
 
     {/* About */}
-    <div id='About' className='w-full my-10 md:h-96 flex flex-col items-center justify-center px-8 md:px-16 space-y-8'>
-      <h1 className='text-4xl font-serif font-semibold'>About</h1>
-      <p className=' text-md md:text-xl font-sans'>
-
-Welcome to the Game Development Club!  We&apos;re passionate about exploring cutting-edge design technologies like VR, AR, 3D modeling, and game development. Our mission is to empower members with the skills and knowledge to thrive in these fields through hands-on training, workshops, and internship opportunities.
-
-Join us to unleash your creativity, collaborate with like-minded individuals, and shape the future of design technologies. Let&apos;s innovate together!</p>
+  
 
 
-    </div>
+    
     <div className='w-full flex flex-col items-center justify-center px-4 md:px-16 space-y-12'>
   <h1 className='text-4xl font-serif font-semibold'>Training</h1>
   <div className='w-full flex flex-col md:flex-row gap-6'>
