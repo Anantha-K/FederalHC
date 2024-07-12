@@ -29,7 +29,7 @@ const Nav = () => {
   <ul className='hidden md:flex md:space-x-10'>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/'>Home</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#About'>About</Link></li>
-    <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#Opp'>Team</Link></li>
+    <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/Team'>Team</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#Opp'>Activities</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#Opp'>Contact</Link></li>
 
