@@ -160,15 +160,16 @@ const Home = () => {
 
 
     </div>
-    <footer className='w-full border-t-2 border-gray-200 py-3 mt-5 h-36 md:h-24 justify-between items-center px-5 flex flex-col md:flex-row'>
-      <Image src={logo} alt='' className='h-[50px] w-[50px] md:h-[60px] md:w-[70px]'/>
-      <ul className='flex space-x-5 text-4xl'>
-        <FaInstagram className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
-        <FaLinkedin className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
-        <FaSquareXTwitter className='hover:cursor-pointer hover:text-blue-700 duration-300 transition'/>
-      </ul>
 
-      
+
+
+
+
+
+
+  {/* Footer */}
+    <footer className='w-full border-t-2 bg-black border-gray-200 py-3 mt-5 h-72 md:h-24 justify-between items-center px-5 flex flex-col md:flex-row'>
+     
 
     </footer>
     </>
