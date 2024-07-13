@@ -29,7 +29,7 @@ const Page = () => {
   }
 
   return (
-    <div className='bg-black w-full min-h-screen p-8'>
+    <div className='bg-black w-full pt-32 min-h-screen p-8'>
       <motion.div
         variants={containerVariants}
         initial="hidden"

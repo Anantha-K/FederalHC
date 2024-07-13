@@ -30,7 +30,7 @@ const Nav = () => {
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/'>Home</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#About'>About</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/Team'>Team</Link></li>
-    <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#Opp'>Activities</Link></li>
+    <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='#Activity'>Activities</Link></li>
     <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/Contact'>Contact</Link></li>
 
 
