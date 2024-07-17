@@ -13,6 +13,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import ld from './assets/ld.JPG'
 import { StickyScroll } from './Components/Scroll'
 import { TextGenerateEffect } from './Components/About'
+import Footer from './Components/Footer'
+import ContactPage from './Components/Contact'
 
 
 
@@ -135,12 +137,10 @@ Stic
 
 
 
-
+<ContactPage></ContactPage>
   {/* Footer */}
-    <footer className='w-full border-t-2 bg-black border-gray-200 py-3 mt-5 h-72 md:h-24 justify-between items-center px-5 flex flex-col md:flex-row'>
-     
+  <Footer/>
 
-    </footer>
     </>
  )
 }

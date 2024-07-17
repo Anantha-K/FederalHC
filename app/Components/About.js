@@ -14,8 +14,8 @@ export const TextGenerateEffect = ({ words, className }) => {
         opacity: 1,
       },
       {
-        duration: .5,
-        delay: stagger(0.1),
+        duration: .1,
+        delay: stagger(0.05),
       }
     );
   }, [scope.current]);
