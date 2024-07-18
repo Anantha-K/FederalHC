@@ -1,15 +1,21 @@
 import React from 'react'
+import { FaInstagram,FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+
 
 const Footer = () => {
   return (
-    <footer className='bg-black w-full h-36 flex flex-col text-white bottom-0 fixed'>
-        <div className='flex'>
-        <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full  w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-12 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Send
-              </span>
-            </button>
+    <footer className='bg-black w-full h-36 flex flex-col text-white bottom-0'>
+        <div className='flex flex-row items-center justify-center text-4xl gap-16'>
+        <FaInstagram className='hover:cursor-pointer hover:text-pink-400 transition-all duration-700' />
+        <FaLinkedinIn className='hover:cursor-pointer hover:text-blue-600 transition-all duration-700' />
+        <FaXTwitter  className='hover:cursor-pointer transition-all duration-700'/>
+
+        
+
+
+    
 
         </div>
         <p>All rights reserved</p>
