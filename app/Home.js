@@ -15,7 +15,7 @@ import { StickyScroll } from './Components/Scroll'
 import { TextGenerateEffect } from './Components/About'
 import Footer from './Components/Footer'
 import ContactPage from './Components/Contact'
-
+import ThreeDModel from './Components/Threed'
 
 
 
@@ -97,7 +97,9 @@ const Home = () => {
 
     {/* landing */}
     <div className='bg-black w-full z-0 flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
+    <ThreeDModel/>
 </div>
+
 
 
 
