@@ -106,8 +106,9 @@ const Home = () => {
 
 
     {/* About */}
-    <div className='bg-black m-0 p-0 pt-5'>
-    <TextGenerateEffect className='bg-black' words={words} />;
+    <div className='bg-black text-white m-0 flex-col p-0 pt-5 flex items-center justify-center'>
+      <h1 className='text-3xl'>About</h1>
+    <TextGenerateEffect className='bg-black w-[80%]' words={words} />;
 
     </div>
   
