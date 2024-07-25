@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import img from '../assets/AR.jpg'
 
 export const StickyScroll = ({
   content,
@@ -30,6 +32,12 @@ export const StickyScroll = ({
     );
     setActiveCard(closestBreakpointIndex);
   });
+
+  const imageUrls = [
+    img,
+    img,
+    img,
+  ];
 
   const backgroundColors = [
     "var(--slate-900)",
@@ -88,7 +96,7 @@ export const StickyScroll = ({
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         style={{ background: backgroundGradient }}
         className={cn(
           "hidden lg:block h-96 w-96 rounded-md bg-white sticky top-20 overflow-hidden",
@@ -96,7 +104,17 @@ export const StickyScroll = ({
         )}
       >
         {content[activeCard].content ?? null}
-      </div>
+      </div> */}
+      <Image
+        src={imageUrls[activeCard % imageUrls.length]} // Dynamically set image source
+        alt="Card Image"
+        className={cn(
+          "hidden lg:block h-96 w-96 rounded-md bg-white sticky top-20 overflow-hidden",
+          contentClassName
+        )}
+        width={384} 
+        height={384} 
+      />
     </motion.div>
   );
 };

@@ -106,8 +106,8 @@ const Home = () => {
 
 
     {/* About */}
-    <div className='bg-black text-white m-0 flex-col p-0 pt-5 flex items-center justify-center'>
-      <h1 className='text-3xl'>About</h1>
+    <div className='bg-black text-white m-0 flex-col p-0 pt-5 flex h-screen items-center justify-between'>
+      <h1 className='text-4xl mt-10'>About</h1>
     <TextGenerateEffect className='bg-black w-[80%]' words={words} />;
 
     </div>
@@ -127,7 +127,7 @@ const Home = () => {
 
 
 
-
+{/* 
 <div id='Opp' className='w-full my-10 md:h-96 flex flex-col items-center justify-center px-8 md:px-16 space-y-8'>
       <h1 className='text-4xl font-serif font-bold'>Opportunities</h1>
       <p className=' text-md md:text-xl font-sans'>
@@ -137,7 +137,7 @@ const Home = () => {
 
     </div>
 
-Stic
+Stic */}
 
 
 
