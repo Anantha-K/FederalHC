@@ -1,43 +1,35 @@
-import React, { Suspense, useEffect, useRef } from 'react'
+import React, { Suspense, useRef, useEffect } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
-
 function VRHeadset({ mousePosition }) {
-  const headsetRef = useRef()
+  const groupRef = useRef()
   const gltf = useLoader(GLTFLoader, '/Model.glb')
+
   useEffect(() => {
-    if (headsetRef.current) {
-      headsetRef.current.rotation.y = THREE.MathUtils.degToRad(-15) 
+    if (groupRef.current) {
+      groupRef.current.rotation.y = Math.PI 
     }
   }, [])
 
   useFrame(() => {
-    if (headsetRef.current) {
-      // Add mouse movement to the initial tilt
-      headsetRef.current.rotation.y = THREE.MathUtils.degToRad(-15) + mousePosition.x * 0.5
-      headsetRef.current.rotation.x = -mousePosition.y * 0.5
-    }
-  })
-
-
-
-  useFrame(() => {
-    if (headsetRef.current) {
-      headsetRef.current.rotation.y = mousePosition.x * 0.5
-      headsetRef.current.rotation.x = -mousePosition.y * 0.5
+    if (groupRef.current) {
+      // Add mouse movement to the rotation
+      groupRef.current.rotation.y = Math.PI + mousePosition.x * 0.5
+      groupRef.current.rotation.x = -mousePosition.y * 0.5
     }
   })
 
   return (
-    <primitive
-      object={gltf.scene}
-      ref={headsetRef}
-      scale={[4, 4, 4]}
-      position={[0, 0, 0]}
-    />
+    <group ref={groupRef}>
+      <primitive
+        object={gltf.scene}
+        scale={[6, 6, 6]}
+        position={[0, 0, 0]}
+      />
+    </group>
   )
 }
 
