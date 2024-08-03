@@ -40,7 +40,7 @@ function VRHeadset({ mousePosition }) {
 
 function FloatingText({ floatY }) {
   const textRef = useRef()
-  const letters = "Virtual Reality"
+  const letters = "Federal Horizon Development"
 
   useFrame(({ clock }) => {
     if (textRef.current) {
