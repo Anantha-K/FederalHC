@@ -16,7 +16,6 @@ function VRHeadset({ mousePosition }) {
 
   useFrame(() => {
     if (groupRef.current) {
-      // Add mouse movement to the rotation
       groupRef.current.rotation.y = Math.PI + mousePosition.x * 0.5
       groupRef.current.rotation.x = -mousePosition.y * 0.5
     }
