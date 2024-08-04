@@ -11,7 +11,7 @@ function VRHeadset({ mousePosition }) {
 
   useEffect(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y = Math.PI
+      groupRef.current.rotation.y = 0 // Changed from Math.PI to 0
     }
   }, [])
 
@@ -20,7 +20,7 @@ function VRHeadset({ mousePosition }) {
     setFloatY(newFloatY)
 
     if (groupRef.current) {
-      groupRef.current.rotation.y = Math.PI + mousePosition.x * 0.5
+      groupRef.current.rotation.y = mousePosition.x * 0.5 // Removed Math.PI
       groupRef.current.rotation.x = -mousePosition.y * 0.5
       groupRef.current.position.y = newFloatY
     }
@@ -53,12 +53,14 @@ function FloatingText({ floatY }) {
   return (
     <group ref={textRef} position={[0, -2, 0]}>
       {letters.split('').map((letter, index) => (
-        <Text
-          key={index}
-          color="black"
-          fontSize={0.3}
-          position={[(index - letters.length / 2) * 0.3, 0, 0]}
-        >
+      <Text
+      key={index}
+      color="black"
+      fontSize={0.3}
+      position={[(index - letters.length / 2) * 0.3, 0, 0]} // Reverted to original calculation
+      anchorX="center"
+      anchorY="middle"
+    >
           {letter}
         </Text>
       ))}
