@@ -6,31 +6,31 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-900 items-center justify-between py-5 w-full h-56 flex flex-col text-white bottom-0'>
-        <div className='flex mt-5 flex-row items-center justify-center text-4xl gap-16'>
-        <a>
-          <FaInstagram className='hover:cursor-pointer hover:text-pink-400 transition-all duration-700' />
-          </a>
-        <a>
-          <FaLinkedinIn className='hover:cursor-pointer hover:text-blue-600 transition-all duration-700' />
-          </a>
-        <a>
-          <FaXTwitter  className='hover:cursor-pointer transition-all duration-700'/>
-          </a>
+  <>
+  <footer className='flex w-full h-52 bg-black items-center'>
+    <div className='w-[90%] mx-auto border-[1px] h-32 border-gray-500 flex flex-col'>
+      <div className='flex justify-between h-full'>
+        <div>
 
-        
-
-
-    
+        <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1>
+        </div>
+        <div className='flex place-items-end h-full align-text-bottom'>
+        <a className='text-2xl font-bold text-white'>Send us an email</a>
 
         </div>
-        <div className='flex flex-col items-center text-sm'>
+      </div>
+      
 
-        <p>© 2024 Federal Horizon Development. All rights reserved.</p>
-        <p>Developed and Maintained by Anantha Krishnan</p>
 
-        </div>
-    </footer>
+    </div> 
+
+  </footer>
+  
+  
+  
+  
+  
+  </>
   )
 }
 
