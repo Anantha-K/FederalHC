@@ -16,6 +16,7 @@ import { TextGenerateEffect } from './Components/About'
 import Footer from './Components/Footer'
 import ContactPage from './Components/Contact'
 import HeroScene from './Components/Threed'
+import Join from './Components/Join'
 
 
 
@@ -122,7 +123,12 @@ const Home = () => {
 
 
 {/* Activities */}
+<div className='w-full flex items-center justify-center  bg-black'>
+<h1 className='text-white text-5xl'>Programs Offered</h1>
+
+</div>
 <StickyScroll id="Activity" className='md:hidden' content={content}/>
+<Join/>
 
 
 
@@ -141,7 +147,7 @@ Stic */}
 
 
 
-<ContactPage></ContactPage>
+{/* <ContactPage></ContactPage> */}
   {/* Footer */}
   <Footer/>
 
