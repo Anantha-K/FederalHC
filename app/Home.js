@@ -26,9 +26,9 @@ const Home = () => {
   const words="Welcome to Federal Horizon Development, your gateway to the immersive world of VR, AR, and web development! We are a vibrant community of tech enthusiasts, designers, and creators passionate about harnessing cutting-edge technologies to build the future. Through hands-on projects, collaborative workshops, and spirited participation in inter and intra-college competitions, we strive to push the boundaries of innovation and creativity. Whether you're a seasoned developer or just starting out, join us as we explore new horizons, learn together, and make our mark in the ever-evolving landscape of digital innovation."
   const content = [
     {
-      title: "Virtual Reality (VR)",
+      title: "VR Development",
       description:
-        "Comprehensive training on VR hardware, software development, and practical applications across industries",
+        "Explore the world of Virtual Reality with hands-on training and projects to create immersive experiences.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           Collaborative Editing
@@ -36,9 +36,9 @@ const Home = () => {
       ),
     },
     {
-      title: "Augmented Reality (AR)",
+      title: "Web Development",
       description:
-        "In-depth exploration of AR concepts, creation of AR experiences, and integration into real-world scenarios.",
+        "Master front-end and back-end web development with comprehensive courses on building and maintaining dynamic websites.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
@@ -52,9 +52,19 @@ const Home = () => {
       ),
     },
     {
-      title: "Game Development",
+      title: "Full Stack Development",
       description:
-        "Practical guidance on game design, programming, and development using industry-standard tools, languages & engines like Unreal,Blender,Unity, C#, C++, etc",
+        "Gain expertise in both front-end and back-end technologies and learn how to create complete web applications from scratch.",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+          Version control
+        </div>
+      ),
+    },
+    {
+      title: "App Development",
+      description:
+        "Learn to design, develop, and deploy applications for various platforms, including mobile and desktop.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
           Version control
