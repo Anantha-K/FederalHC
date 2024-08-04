@@ -23,7 +23,7 @@ import Join from './Components/Join'
 
 
 const Home = () => {
-  const words="Welcome to Federal Horizon Development, your gateway to the immersive world of VR, AR, and web development! We are a vibrant community of tech enthusiasts, designers, and creators passionate about harnessing cutting-edge technologies to build the future. Through hands-on projects, collaborative workshops, and spirited participation in inter and intra-college competitions, we strive to push the boundaries of innovation and creativity. Whether you're a seasoned developer or just starting out, join us as we explore new horizons, learn together, and make our mark in the ever-evolving landscape of digital innovation.";
+  const words="Welcome to Federal Horizon Development, your gateway to the immersive world of VR, AR, and web development! We are a vibrant community of tech enthusiasts, designers, and creators passionate about harnessing cutting-edge technologies to build the future. Through hands-on projects, collaborative workshops, and spirited participation in inter and intra-college competitions, we strive to push the boundaries of innovation and creativity. Whether you're a seasoned developer or just starting out, join us as we explore new horizons, learn together, and make our mark in the ever-evolving landscape of digital innovation."
   const content = [
     {
       title: "Virtual Reality (VR)",
@@ -108,8 +108,7 @@ const Home = () => {
 
     {/* About */}
     <div className='bg-black text-white m-0 flex-col p-0 pt-5 flex h-screen items-center justify-between'>
-      <h1 className='text-4xl mt-10'>About</h1>
-    <TextGenerateEffect className='bg-black w-[80%]' words={words} />;
+    <TextGenerateEffect className='bg-black w-[80%]' words={words} />
 
     </div>
   
