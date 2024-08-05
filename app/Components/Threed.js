@@ -12,7 +12,7 @@ function VRHeadset({ mousePosition }) {
 
   useEffect(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y = Math.PI;
+      modelRef.current.rotation.y = 0;
     }
   }, [])
 

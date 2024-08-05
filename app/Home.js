@@ -51,16 +51,16 @@ const Home = () => {
         </div>
       ),
     },
-    {
-      title: "Full Stack Development",
-      description:
-        "Gain expertise in both front-end and back-end technologies and learn how to create complete web applications from scratch.",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-          Version control
-        </div>
-      ),
-    },
+    // {
+    //   title: "Full Stack Development",
+    //   description:
+    //     "Gain expertise in both front-end and back-end technologies and learn how to create complete web applications from scratch.",
+    //   content: (
+    //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+    //       Version control
+    //     </div>
+    //   ),
+    // },
     {
       title: "App Development",
       description:

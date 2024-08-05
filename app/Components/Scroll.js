@@ -4,7 +4,11 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import img from '../assets/AR.jpg'
+import img1 from '../assets/VR.jpg'
+import img3 from '../assets/Game.jpg'
+import img2 from '../assets/WEB.jpeg'
+import img4 from '../assets/APP.jpeg'
+
 
 export const StickyScroll = ({
   content,
@@ -34,9 +38,10 @@ export const StickyScroll = ({
   });
 
   const imageUrls = [
-    img,
-    img,
-    img,
+    img1,
+    img2,
+    // img3,
+    img4
   ];
 
   const backgroundColors = [
