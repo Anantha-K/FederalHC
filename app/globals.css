@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Array';
+  src: url('../Array_Complete/Fonts/OTF/Array-Bold.otf') format('opentype'),
+       url('../Array_Complete/Fonts/OTF/Array-Regular.otf') format('opentype'),
+       url('/fonts/myfontsharefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 *{
   scroll-behavior: smooth !important;
 }
+
+#mail{
+  font-family: 'Array';
+}
+
 
 
 #checkbox {

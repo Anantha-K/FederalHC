@@ -5,6 +5,13 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
+import logo from '../assets/FHDLOGO.png'
+import logo2 from '../assets/FHDLOGO-2.png'
+import logo3 from '../assets/FHDLOGO-3.png'
+import { MdArrowOutward } from "react-icons/md";
+
+
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +26,7 @@ const Footer = () => {
     const footer = footerRef.current;
     if (!footer) return;
 
-    gsap.set(footer, { y: 100, opacity: 0 }); // Set initial state immediately
+    gsap.set(footer, { y: 100, opacity: 0 });
 
     gsap.to(footer, {
       y: 0,
@@ -43,26 +50,36 @@ const Footer = () => {
     <footer id='footer' className='flex w-full h-56 pb-4 bg-black items-center overflow-hidden'>
       <div 
         ref={footerRef} 
-        className='w-[95%] mx-auto border-[1px] bg-black h-52 border-gray-500 p-5 rounded-lg flex flex-col'
+        className='w-[95%] mx-auto border-[1px] bg-black h-52 border-gray-500  p-5 rounded-lg flex flex-col'
       >
         <div className='flex justify-between h-full'>
           <div>
-            <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1>
+            {/* <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1> */}
+            <Image src={logo3}  className='ml-2 md:ml-8 w-[170px] md:w-[190px] h-[50px] md:h-[60px]'  ></Image>
+
           </div>
-          <div className='flex place-items-end h-full align-text-bottom'>
-            <a className='text-2xl font-bold font-serif mb-3 text-white' href='mailto:federalhorizondevelopment@gmail.com'>Send us an email</a>
+          <div className='flex place-items-end h-full align-text-bottom text-white'>
+
+            <a className='text-l md:text-2xl font-bold font-serif mb-3 text-white' href='mailto:federalhorizondevelopment@gmail.com' id='mail'>Send us an email</a>
+          {/* <MdArrowOutward className='text-3xl ml-3 -translate-y-3' /> */}
           </div>
         </div>
         <div className='border-t-[1px] flex mx-auto py-2 w-[95%] justify-between text-white border-gray-500'>
           <div>
-            Logo
+          <Image src={logo2} width='30' height='30' className='hidden md:flex'></Image>
           </div>
-          <div className='flex translate-x-20 gap-10'>
+          <div className='md:flex translate-x-20 gap-10 hidden'>
             <Link href={''}>Instagram</Link>
             <Link href={''}>Facebook</Link>
             <Link href={''}>X</Link>
           </div>
-          <div className='flex flex-col items-end text-xs text-gray-400'>
+          <div className='flex md:hidden gap-5 mr-16 justify-start items-center '>
+            <Link href={''}><FaInstagram/></Link>
+            <Link href={''}><FaLinkedinIn/> </Link>
+            <Link href={''}><FaXTwitter/></Link>
+
+          </div>
+          <div className='flex flex-col items-end text-[9px] md:text-xs text-gray-400'>
             <p>2024 All rights reserved</p>
             <p>Made with 🤍 by Anantha Krishnan</p>
           </div>
