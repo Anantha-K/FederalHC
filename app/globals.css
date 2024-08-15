@@ -11,10 +11,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'New';
+  src: url('../CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Regular.otf') format('opentype'),
+       url('../Array_Complete/Fonts/OTF/Array-Regular.otf') format('opentype'),
+       url('/fonts/myfontsharefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 *{
   scroll-behavior: smooth !important;
+  font-family: "New";
 }
 
 #mail{

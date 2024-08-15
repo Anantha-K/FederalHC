@@ -17,6 +17,7 @@ import Footer from './Components/Footer'
 import ContactPage from './Components/Contact'
 import HeroScene from './Components/Threed'
 import Join from './Components/Join'
+// import vid from '../public/Video.mp4'
 
 
 
@@ -108,8 +109,22 @@ const Home = () => {
 
 
     {/* landing */}
-    <div className='bg-black w-full z-0 flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
-    <HeroScene/>
+    <div className='bg-black w-full z-0 hidden md:flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
+    <HeroScene className='sm:hidden md:block'/>
+
+   
+</div>
+<div className='bg-black flex md:hidden w-full h-screen'>
+<video 
+      autoPlay 
+      loop 
+      muted 
+      playsInline 
+      className="w-full h-full object-cover block md:hidden "
+    >
+      <source src='../public/Video.mp4' width='300' height='300' type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 </div>
 
 
@@ -132,7 +147,7 @@ const Home = () => {
 
 
 {/* Activities */}
-<div className='w-full flex items-center justify-center  bg-black'>
+<div className='w-full flex items-center justify-center pt-24  bg-black'>
 <h1 className='text-white text-5xl'>Programs Offered</h1>
 
 </div>

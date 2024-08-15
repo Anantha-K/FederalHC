@@ -7,7 +7,7 @@ import Image from "next/image";
 import img1 from '../assets/VR.jpg'
 import img3 from '../assets/Game.jpg'
 import img2 from '../assets/WEB.jpeg'
-import img4 from '../assets/APP.jpeg'
+import img4 from '../assets/APPP.jpeg'
 
 
 export const StickyScroll = ({
