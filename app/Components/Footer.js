@@ -40,7 +40,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className='flex w-full h-56 pb-4 bg-black items-center overflow-hidden'>
+    <footer id='footer' className='flex w-full h-56 pb-4 bg-black items-center overflow-hidden'>
       <div 
         ref={footerRef} 
         className='w-[95%] mx-auto border-[1px] bg-black h-52 border-gray-500 p-5 rounded-lg flex flex-col'

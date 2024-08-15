@@ -12,32 +12,32 @@ function VRHeadset({ mousePosition }) {
 
   useEffect(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y = 0;
+      modelRef.current.rotation.y = -Math.PI / 2; 
     }
   }, [])
 
   useFrame(({ clock }) => {
     const newFloatY = Math.sin(clock.getElapsedTime()) * 0.1
     setFloatY(newFloatY)
-
     if (groupRef.current && modelRef.current) {
       groupRef.current.position.y = newFloatY
-      modelRef.current.rotation.y = Math.PI + mousePosition.x * 0.5
+      modelRef.current.rotation.y = -Math.PI / 2 + mousePosition.x * 0.5
       modelRef.current.rotation.x = -mousePosition.y * 0.5
     }
   })
 
   return (
     <group ref={groupRef}>
-      <group ref={modelRef}>
-        <primitive
-          object={gltf.scene}
-          scale={[6, 6, 6]}
-          position={[0, 0, 0]}
-        />
-      </group>
-      <FloatingText floatY={floatY} />
+    <group ref={modelRef}>
+      <primitive
+        object={gltf.scene}
+        scale={[6, 6, 6]}
+        position={[0, 0, 0]}
+      />
     </group>
+    <FloatingText floatY={floatY} />
+  </group>
+     
   )
 }
 
