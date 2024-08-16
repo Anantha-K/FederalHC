@@ -133,10 +133,46 @@ const Home = () => {
 
     {/* About */}
     <div id='About' className='bg-black text-white m-0 flex-col p-0 pt-5 flex h-fit items-center justify-between'>
-    <TextGenerateEffect className='bg-black w-[80%]' words={words} />
+  <TextGenerateEffect className='bg-black w-[80%]' words={words} />
 
+  <section className="bg-gradient-to-r from-blue-900 to-purple-900 py-16 w-full mt-12">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-white mb-4">Our Purpose</h2>
+        {/* <div className="w-24 h-1 bg-yellow-400 mx-auto"></div> */}
+      </div>
+      
+      <div className="flex flex-col md:flex-row justify-center items-stretch space-y-8 md:space-y-0 md:space-x-8">
+        <div className="bg-black bg-opacity-50 rounded-lg shadow-lg p-8 flex flex-col justify-between transform hover:scale-105 transition duration-300 md:w-1/2 border border-blue-500">
+          <div>
+            <h3 className="text-2xl font-semibold text-blue-400 mb-4">Our Mission</h3>
+            <p className="text-gray-300 leading-relaxed">
+            Our mission is to empower individuals by providing comprehensive training and hands-on
+experience in cutting-edge technologies across all domains of Computer Science. We
+strive to foster a learning environment that promotes innovation, collaboration, and
+professional growth.            </p>
+          </div>
+          {/* <div className="mt-6">
+            <a href="#" className="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Learn More</a>
+          </div> */}
+        </div>
+
+        <div className="bg-black bg-opacity-50 rounded-lg shadow-lg p-8 flex flex-col justify-between transform hover:scale-105 transition duration-300 md:w-1/2 border border-purple-500">
+          <div>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Our Vision</h3>
+            <p className="text-gray-300 leading-relaxed">
+            To be a leading technology development club recognized for advancing knowledge and
+skills in computer science, creating a community of tech enthusiasts who drive
+technological progress and make a positive impact on the industry.            </p>
+          </div>
+          {/* <div className="mt-6">
+            <a href="#" className="inline-block bg-purple-600 text-white font-semibold px-4 py-2 rounded hover:bg-purple-700 transition duration-300">Discover More</a>
+          </div> */}
+        </div>
+      </div>
     </div>
-  
+  </section>
+</div>
 
 
 
@@ -148,7 +184,7 @@ const Home = () => {
 
 {/* Activities */}
 <div className='w-full flex items-center justify-center pt-24  bg-black'>
-<h1 className='text-white text-5xl'>Programs Offered</h1>
+<h1 className='text-white text-5xl md:mb-10'>Programs Offered</h1>
 
 </div>
 <StickyScroll id="Activity" className='md:hidden' content={content}/>
