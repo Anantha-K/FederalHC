@@ -55,7 +55,7 @@ const Footer = () => {
         <div className='flex justify-between h-full'>
           <div>
             {/* <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1> */}
-            <Image src={logo3}  className='ml-2 md:ml-8 w-[170px] md:w-[190px] h-[50px] md:h-[60px]'  ></Image>
+            {/* <Image src={logo3}  className='ml-2 md:ml-8 w-[170px] md:w-[190px] h-[50px] md:h-[60px]'  ></Image> */}
 
           </div>
           <div className='flex place-items-end h-full align-text-bottom text-white'>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         <div className='border-t-[1px] flex mx-auto py-2 w-[95%] justify-between text-white border-gray-500'>
           <div>
-          <Image src={logo2} width='30' height='30' className='hidden md:flex'></Image>
+          {/* <Image src={logo2} width='30' height='30' className='hidden md:flex'></Image> */}
           </div>
           <div className='md:flex translate-x-20 gap-10 hidden'>
             <Link href={''}>Instagram</Link>
