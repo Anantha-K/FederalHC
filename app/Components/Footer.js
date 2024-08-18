@@ -55,7 +55,7 @@ const Footer = () => {
         <div className='flex justify-between h-full'>
           <div>
             {/* <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1> */}
-            <Image src={logo3}  className='ml-2 md:ml-8 w-[70px] md:w-[190px] h-[30px] md:h-[60px]'  ></Image>
+            <Image src={logo3}  alt='' className='ml-2 md:ml-8 w-[70px] md:w-[190px] h-[30px] md:h-[60px]'  ></Image>
 
           </div>
           <div className='flex place-items-end h-full align-text-bottom text-white'>

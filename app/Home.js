@@ -122,7 +122,7 @@ const Home = () => {
       playsInline 
       className="w-full h-full object-cover block md:hidden "
     >
-      <source src='../public/Video.mp4' width='300' height='300' type="video/mp4" />
+      <source src='/Video.mp4' width='300' height='300' type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 </div>
@@ -132,8 +132,8 @@ const Home = () => {
 
 
     {/* About */}
-    <div id='About' className='bg-black text-white m-0 flex-col p-0 pt-5 flex h-fit items-center justify-between'>
-  <TextGenerateEffect className='bg-black w-[80%]' words={words} />
+    <div id='About' className='bg-[#e0e0e0] text-white m-0 flex-col p-0 pt-5 flex h-fit items-center justify-between'>
+  <TextGenerateEffect className='bg-[#e0e0e0] text-black w-[80%]' words={words} />
 
   <section className="bg-gradient-to-r from-blue-900 to-purple-900 py-16 w-full mt-12">
     <div className="container mx-auto px-4">

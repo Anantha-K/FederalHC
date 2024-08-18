@@ -12,7 +12,7 @@ export const TextGenerateEffect = ({ className }) => {
   const content = [
     {
       title: "About Us",
-      text: "Welcome to the Federal Horizon Development Club! We are dedicated to advancing skills across all domains of Computer Science with cutting-edge training programs tailored to the evolving tech landscape. Our goal is to provide hands-on, practical training in a variety of advanced technologies, preparing our members for real-world challenges. We create an inclusive and dynamic learning environment that blends theory with application, ensuring our members are well-equipped to succeed in the tech industry. Join us to engage in collaborative projects, attend exclusive workshops, and connect with industry professionals. Together, we drive innovation and shape the future of technology."
+      text: "FISAT HORIZON, initiated by IEDC FISAT in collaboration with the Computer Science department, is a pioneering club dedicated to merging the worlds of virtual reality and innovative design. Our mission is to foster a dynamic learning environment where students can explore and master the latest advancements in VR technology and digital design. Through hands-on projects, workshops, and collaborative challenges, we empower our members to create immersive experiences and push the boundaries of interactive media. At FISAT HORIZON, we believe in the transformative power of technology and creativity, striving to develop skills that will shape the future of the digital and virtual landscape."
     }
   ];
 
@@ -24,7 +24,7 @@ export const TextGenerateEffect = ({ className }) => {
       const heading = section.querySelector("h2");
       const text = section.querySelector("p");
 
-      gsap.set(heading, { opacity: 0, x: index % 2 === 0 ? -50 : 50 });
+      gsap.set(heading, { opacity: 0, y: 50 });
 
       ScrollTrigger.create({
         trigger: section,
@@ -32,9 +32,9 @@ export const TextGenerateEffect = ({ className }) => {
         onEnter: () => {
           gsap.to(heading, {
             opacity: 1,
-            x: 0,
-            duration: 2,
-            ease: "power2.out",
+            y: 0,
+            duration: 1.5,
+            ease: "power3.out",
           });
 
           const words = text.querySelectorAll("span");
@@ -42,7 +42,7 @@ export const TextGenerateEffect = ({ className }) => {
             gsap.to(word, {
               opacity: 1,
               duration: 0.1,
-              delay: idx * 0.1, 
+              delay: idx * 0.05,
               ease: "power2.out",
               scrollTrigger: {
                 trigger: word,
@@ -62,13 +62,13 @@ export const TextGenerateEffect = ({ className }) => {
   }, []);
 
   return (
-    <div ref={containerRef} className={cn("font-bold", className)}>
+    <div ref={containerRef} className={cn("font-bold bg-[#e0e0e0] px-4 sm:px-6 lg:px-8", className)}>
       {content.map((item, index) => (
-        <div key={index} className="section mt-16 text-center">
-          <h2 className="dark:text-white text-white text-3xl mb-4">
+        <div key={index} className="section mt-12 sm:mt-16 text-center">
+          <h2 className="text-black text-6xl sm:text-3xl mb-4 sm:mb-6">
             {item.title}
           </h2>
-          <p className="dark:text-white mt-12 text-white text-xl leading-relaxed">
+          <p className="text-black text-base sm:text-lg md:text-2xl space-y-2 leading-relaxed text-justify sm:text-left">
             {item.text.split(" ").map((word, idx) => (
               <span key={idx} className="inline-block opacity-0">
                 {word}&nbsp;

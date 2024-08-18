@@ -43,7 +43,7 @@ function VRHeadset({ mousePosition }) {
 
 function FloatingText({ floatY }) {
   const textRef = useRef()
-  const letters = "Federal Horizon Development"
+  const letters = "Fisat Horizon Club"
 
   useFrame(({ clock }) => {
     if (textRef.current) {
@@ -59,7 +59,7 @@ function FloatingText({ floatY }) {
         <Text
           key={index}
           color="black"
-          fontSize={0.3}
+          fontSize={0.5}
           position={[(index - letters.length / 2) * 0.3, 0, 0]}
           anchorX="center"
           anchorY="middle"

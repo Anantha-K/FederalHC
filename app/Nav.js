@@ -37,10 +37,10 @@ const Nav = () => {
   </ul>
   <div id="menuToggle" className='md:hidden'>
   <input id="checkbox" type="checkbox" onChange={handleClick} checked={active}/>
-  <label class="toggle" for="checkbox">
-    <div class="bar bar--top"></div>
-    <div class="bar bar--middle"></div>
-    <div class="bar bar--bottom"></div>
+  <label className="toggle" htmlFor="checkbox">
+    <div className="bar bar--top"></div>
+    <div className="bar bar--middle"></div>
+    <div className="bar bar--bottom"></div>
   </label>
 </div>
 </nav>
@@ -48,10 +48,10 @@ const Nav = () => {
   <ul className='flex text-4xl items-center space-y-20 flex-col md:space-x-10 bg-inherit'>
     <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink} className='bg-inherit'  href='/'>Home</Link></li>
     <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#About'>About</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opp'>Team</Link></li>
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opp'>Activities</Link></li>
+    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='/Team'>Team</Link></li>
+    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Activity'>Activities</Link></li>
 
-    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Opp'>Contact</Link></li>
+    <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#footer'>Contact</Link></li>
   </ul>
 </nav></>  )
 }
