@@ -14,7 +14,6 @@ import ld from './assets/ld.JPG'
 import { StickyScroll } from './Components/Scroll'
 import { TextGenerateEffect } from './Components/About'
 import Footer from './Components/Footer'
-import ContactPage from './Components/Contact'
 import HeroScene from './Components/Threed'
 import Join from './Components/Join'
 // import vid from '../public/Video.mp4'
@@ -74,31 +73,7 @@ const Home = () => {
     },
    
   ];
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions2 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData2,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions3 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData3,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
- 
+
   return (
     <>
 
@@ -191,7 +166,7 @@ technological progress and make a positive impact on the industry.            </
 
 {/* Activities */}
 <div className='w-full flex items-center justify-center pt-24  bg-gradient-to-r from-blue-900 to-purple-900'>
-<h1 className='text-white text-5xl md:mb-10'>Programs Offered</h1>
+<h1 className='text-white text-4xl m-0  md:text-4xl md:mb-10'>Programs Offered</h1>
 
 </div>
 <StickyScroll id="Activity" className='md:hidden' content={content}/>

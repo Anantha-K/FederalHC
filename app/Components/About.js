@@ -65,7 +65,7 @@ export const TextGenerateEffect = ({ className }) => {
     <div ref={containerRef} className={cn("font-bold bg-[#e0e0e0] px-4 sm:px-6 lg:px-8", className)}>
       {content.map((item, index) => (
         <div key={index} className="section mt-12 sm:mt-16 text-center">
-          <h2 className="text-black text-6xl sm:text-3xl mb-4 sm:mb-6">
+          <h2 className="text-whitemd:text-black text-6xl sm:text-3xl mb-4 sm:mb-6">
             {item.title}
           </h2>
           <p className="text-black text-base sm:text-lg md:text-2xl space-y-2 leading-relaxed text-justify sm:text-left">
