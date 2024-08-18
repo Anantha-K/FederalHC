@@ -29,8 +29,9 @@ const Nav = () => {
   <ul className='hidden md:flex md:space-x-10'>
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition duration-700'><Link href='/'>Home</Link></li>
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition duration-700'><Link href='#About'>About</Link></li>
-    <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/Team'>Team</Link></li>
+    {/* <li className='hover:text-blue-500 hover:cursor-pointer transition duration-700'><Link href='/Team'>Team</Link></li> */}
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition duration-700'><Link href='#Activity'>Activities</Link></li>
+    <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#goals'>Goals</Link></li>
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition duration-700'><Link href='#footer'>Contact</Link></li>
 
 
@@ -48,8 +49,9 @@ const Nav = () => {
   <ul className='flex text-4xl items-center space-y-20 flex-col md:space-x-10 bg-inherit'>
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink} className='bg-inherit'  href='/'>Home</Link></li>
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#About'>About</Link></li>
-    <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='/Team'>Team</Link></li>
+    {/* <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='/Team'>Team</Link></li> */}
     <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#Activity'>Activities</Link></li>
+    <li className='hover:bg-gradient-to-r from-blue-900 to-purple-900 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#goals'>Goals</Link></li>
 
     <li className='hover:text-blue-700 hover:cursor-pointer transition bg-inherit duration-150'><Link onClick={handleLink}  className='bg-inherit' href='#footer'>Contact</Link></li>
   </ul>

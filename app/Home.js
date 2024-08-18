@@ -188,7 +188,7 @@ technological progress and make a positive impact on the industry.            </
 
 Stic */}
 
-<Goals/>
+<Goals id="goals"/>
 
 {/* <ContactPage></ContactPage> */}
   {/* Footer */}
