@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
 import logo from '../assets/FHDLOGO.png'
 import logo2 from '../assets/FHDLOGO-2.png'
-import logo3 from '../assets/FHDLOGO-3.png'
+import logo3 from '../assets/Logo3-3.png'
 import { MdArrowOutward } from "react-icons/md";
 
 
@@ -55,12 +55,12 @@ const Footer = () => {
         <div className='flex justify-between h-full'>
           <div>
             {/* <h1 className='text-3xl font-bold text-white'>Federal Horizon</h1> */}
-            {/* <Image src={logo3}  className='ml-2 md:ml-8 w-[170px] md:w-[190px] h-[50px] md:h-[60px]'  ></Image> */}
+            <Image src={logo3}  className='ml-2 md:ml-8 w-[70px] md:w-[190px] h-[30px] md:h-[60px]'  ></Image>
 
           </div>
           <div className='flex place-items-end h-full align-text-bottom text-white'>
 
-            <a className='text-l md:text-2xl font-bold font-serif mb-3 text-white' href='mailto:federalhorizondevelopment@gmail.com' id='mail'>Send us an email</a>
+            <a className='text-l md:text-3xl font-bold font-serif mb-3 text-white' href='mailto:federalhorizondevelopment@gmail.com' id='mail'>Send us an email</a>
           {/* <MdArrowOutward className='text-3xl ml-3 -translate-y-3' /> */}
           </div>
         </div>
