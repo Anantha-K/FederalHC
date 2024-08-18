@@ -35,41 +35,41 @@ function VRHeadset({ mousePosition }) {
         position={[0, 0, 0]}
       />
     </group>
-    <FloatingText floatY={floatY} />
+    {/* <FloatingText floatY={floatY} /> */}
   </group>
      
   )
 }
 
-function FloatingText({ floatY }) {
-  const textRef = useRef()
-  const letters = "FISAT HORIZON CLUB"
+// function FloatingText({ floatY }) {
+//   const textRef = useRef()
+//   const letters = "FISAT HORIZON CLUB"
 
-  useFrame(({ clock }) => {
-    if (textRef.current) {
-      textRef.current.children.forEach((child, index) => {
-        child.position.y = Math.sin((clock.getElapsedTime() * 1000 + index * 100) / 500) * 0.05 + floatY * 0.5
-      })
-    }
-  })
+//   useFrame(({ clock }) => {
+//     if (textRef.current) {
+//       textRef.current.children.forEach((child, index) => {
+//         child.position.y = Math.sin((clock.getElapsedTime() * 1000 + index * 100) / 500) * 0.05 + floatY * 0.5
+//       })
+//     }
+//   })
 
-  return (
-    <group ref={textRef} position={[0, -2, 0]}>
-      {letters.split('').map((letter, index) => (
-        <Text
-          key={index}
-          color="black"
-          fontSize={0.5}
-          position={[(index - letters.length / 2) * 0.3, 0, 0]}
-          anchorX="center"
-          anchorY="middle"
-        >
-          {letter}
-        </Text>
-      ))}
-    </group>
-  )
-}
+//   return (
+//     <group ref={textRef} position={[0, -2, 0]}>
+//       {letters.split('').map((letter, index) => (
+//         <Text
+//           key={index}
+//           color="black"
+//           fontSize={0.5}
+//           position={[(index - letters.length / 2) * 0.3, 0, 0]}
+//           anchorX="center"
+//           anchorY="middle"
+//         >
+//           {letter}
+//         </Text>
+//       ))}
+//     </group>
+//   )
+// }
 
 function Scene({ mousePosition }) {
   return (

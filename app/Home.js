@@ -17,7 +17,6 @@ import Footer from './Components/Footer'
 import HeroScene from './Components/Threed'
 import Goals from './Components/Goals'
 import MembershipSection from './Components/Membership'
-
 // import vid from '../public/Video.mp4'
 
 
@@ -82,11 +81,7 @@ const Home = () => {
 
 
     {/* landing */}
-    <div className='bg-black w-full z-0 hidden md:flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
-    <HeroScene className='sm:hidden md:block'/>
-
-   
-</div>
+  
 <div className='bg-black flex md:hidden w-full relative h-screen'>
   <video
     autoPlay
@@ -108,7 +103,32 @@ const Home = () => {
 
 
 
+<div className='bg-black md:flex sm:hidden w-full relative h-screen'>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src='/Video1.mp4' height='100' type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <Image
+  src={logo}
+  alt='Logo'
+  className='z-30 w-[540px] h-[540px] translate-x-7 absolute inset-0 m-auto'
+  priority
+/>
+</div>
 
+
+
+<div className='bg-black w-full z-0 hidden md:flex items-center justify-center mt-0  flex-col min-h-screen md:h-[700px] relative'>
+    <HeroScene className='sm:hidden md:block'/>
+
+   
+</div>
 
 
     {/* About */}
@@ -160,7 +180,7 @@ technological progress and make a positive impact on the industry.            </
 
 
 
-
+ 
 
 {/* Activities */}
 <div className='w-full flex items-center justify-center pt-24  bg-gradient-to-r from-blue-900 to-purple-900'>
