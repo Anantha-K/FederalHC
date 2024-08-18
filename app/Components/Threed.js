@@ -43,7 +43,7 @@ function VRHeadset({ mousePosition }) {
 
 function FloatingText({ floatY }) {
   const textRef = useRef()
-  const letters = "Fisat Horizon Club"
+  const letters = "FISAT HORIZON CLUB"
 
   useFrame(({ clock }) => {
     if (textRef.current) {
