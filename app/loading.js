@@ -3,10 +3,10 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import animationData from './assets/Animation - 1720968817677.json';
-
+console.log('loading');
 export default function Loading() {
   return (
-    <div className="flex justify-center bg-[#f2f2f2] items-center h-screen">
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f2f2f2' }}>
       <Lottie
         animationData={animationData}
         loop={true}

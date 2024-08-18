@@ -17,6 +17,7 @@ import Footer from './Components/Footer'
 import HeroScene from './Components/Threed'
 import Goals from './Components/Goals'
 import MembershipSection from './Components/Membership'
+
 // import vid from '../public/Video.mp4'
 
 
@@ -24,6 +25,7 @@ import MembershipSection from './Components/Membership'
 
 
 const Home = () => {
+  
   const words="Welcome to Federal Horizon Development, your gateway to the immersive world of VR, AR, and web development! We are a vibrant community of tech enthusiasts, designers, and creators passionate about harnessing cutting-edge technologies to build the future. Through hands-on projects, collaborative workshops, and spirited participation in inter and intra-college competitions, we strive to push the boundaries of innovation and creativity. Whether you're a seasoned developer or just starting out, join us as we explore new horizons, learn together, and make our mark in the ever-evolving landscape of digital innovation."
   const content = [
     {
@@ -77,11 +79,6 @@ const Home = () => {
 
   return (
     <>
-
-
-
-
-
 
 
     {/* landing */}
