@@ -15,8 +15,8 @@ import { StickyScroll } from './Components/Scroll'
 import { TextGenerateEffect } from './Components/About'
 import Footer from './Components/Footer'
 import HeroScene from './Components/Threed'
-import Join from './Components/Join'
 import Goals from './Components/Goals'
+import MembershipSection from './Components/Membership'
 // import vid from '../public/Video.mp4'
 
 
@@ -171,7 +171,6 @@ technological progress and make a positive impact on the industry.            </
 
 </div>
 <StickyScroll id="Activity" className='md:hidden' content={content}/>
-<Join/>
 
 
 
@@ -189,6 +188,8 @@ technological progress and make a positive impact on the industry.            </
 Stic */}
 
 <Goals id="goals"/>
+
+<MembershipSection/>
 
 {/* <ContactPage></ContactPage> */}
   {/* Footer */}

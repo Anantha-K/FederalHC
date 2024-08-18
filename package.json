@@ -13,7 +13,7 @@
     "@react-three/fiber": "^8.16.8",
     "@types/three": "^0.166.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.2",
+    "framer-motion": "^11.3.28",
     "greensock": "^1.20.2",
     "gsap": "^3.12.5",
     "is-boolean-object": "1.1.2",
