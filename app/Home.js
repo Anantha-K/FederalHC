@@ -103,7 +103,7 @@ const Home = () => {
 
 
 
-<div className='bg-black md:flex sm:hidden w-full relative h-screen'>
+<div className='bg-black hidden md:flex  w-full relative h-screen'>
   <video
     autoPlay
     loop
