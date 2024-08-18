@@ -6,7 +6,7 @@ import animationData from './assets/Animation - 1720968817677.json';
 
 export default function Loading() {
   return (
-    <div className="flex justify-center bg-gray-300 items-center h-screen">
+    <div className="flex justify-center bg-[#f2f2f2] items-center h-screen">
       <Lottie
         animationData={animationData}
         loop={true}
