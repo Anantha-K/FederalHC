@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Lottie from 'react-lottie'
 import animationData from './assets/VR.json'
 import animationData2 from './assets/Gam.json'
-import logo from './assets/FHD.png'
+import logo from './assets/Logo3.png'
 
 import animationData3 from './assets/AR.json'
 import Link from 'next/link'
@@ -114,18 +114,25 @@ const Home = () => {
 
    
 </div>
-<div className='bg-black flex md:hidden w-full h-screen'>
-<video 
-      autoPlay 
-      loop 
-      muted 
-      playsInline 
-      className="w-full h-full object-cover block md:hidden "
-    >
-      <source src='/Video.mp4' width='300' height='300' type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+<div className='bg-black flex md:hidden w-full relative h-screen'>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src='/Video2.mp4' height='100' type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <Image
+  src={logo}
+  alt='Logo'
+  className='z-30 w-[340px] h-[340px] translate-x-7 absolute inset-0 m-auto'
+  priority
+/>
 </div>
+
 
 
 
@@ -183,7 +190,7 @@ technological progress and make a positive impact on the industry.            </
 
 
 {/* Activities */}
-<div className='w-full flex items-center justify-center pt-24  bg-black'>
+<div className='w-full flex items-center justify-center pt-24  bg-gradient-to-r from-blue-900 to-purple-900'>
 <h1 className='text-white text-5xl md:mb-10'>Programs Offered</h1>
 
 </div>

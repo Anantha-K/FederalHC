@@ -57,7 +57,7 @@ const Page = () => {
                   className='bg-yellow-50 w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mb-4 rounded-full overflow-hidden'
                   whileHover={{ rotate: 5 }}
                 >
-                  {member.image && <img src={member.image} alt={member.name} className='w-full h-full object-cover' />}
+                  {member.image && <Image src={member.image} alt={member.name} className='w-full h-full object-cover' />}
                 </motion.div>
                 <h2 
                   className='text-white text-lg sm:text-xl font-bold text-center'
