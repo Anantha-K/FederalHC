@@ -4,7 +4,7 @@ import Home from './Home'
 import Loading from './loading'
 
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,4 +19,4 @@ const page = () => {
 </>  )
 }
 
-export default page
+export default Page
