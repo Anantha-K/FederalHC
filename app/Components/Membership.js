@@ -26,7 +26,7 @@ const MembershipSection = () => {
         <motion.div className='mb-10' variants={itemVariants}>
           <h3 className='text-2xl font-semibold mb-4 text-indigo-600'>Eligibility</h3>
           <p className='text-lg text-gray-100'>
-            Federal Horizon Development offers a <span className='font-semibold text-indigo-600'>free membership</span>, which is only obtainable by completing at least one course.
+            Federal Horizon Development offers a <span className='font-semibold text-indigo-600'>free membership</span>, which is only obtainable by  completing at least one project with us.
           </p>
         </motion.div>
 
@@ -34,10 +34,10 @@ const MembershipSection = () => {
           <h3 className='text-2xl font-semibold mb-4 text-indigo-600'>How to Join</h3>
           <ol className='list-decimal list-inside text-lg text-gray-100'>
             <li className='mb-3'>
-              <span className='font-semibold'>Enroll in a Course:</span> Register and complete any of our offered courses.
+              <span className='font-semibold'>Complete a Project:</span> Collaborate with us and successfully complete any of our approved projects.
             </li>
             <li>
-              <span className='font-semibold'>Earn Membership:</span> Upon successful completion, you will receive a membership status, granting you access to additional benefits and opportunities within the club.
+              <span className='font-semibold'>Earn Membership:</span>  Once the project is completed, you will be granted membership status, unlocking access to additional benefits and opportunities within the club.
             </li>
           </ol>
         </motion.div>
