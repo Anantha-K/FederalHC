@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           <div className='flex place-items-end h-full align-text-bottom text-white'>
 
-            <a className='text-l md:text-3xl font-bold font-serif mb-3 text-white' href='mailto:federalhorizondevelopment@gmail.com' id='mail'>Send us an email</a>
+            <a className='text-l md:text-3xl font-bold font-serif mb-3 text-white' href='mailto:fisathorizon@gmail.com' id='mail'>Send us an email</a>
           {/* <MdArrowOutward className='text-3xl ml-3 -translate-y-3' /> */}
           </div>
         </div>
