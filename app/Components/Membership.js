@@ -26,7 +26,7 @@ const MembershipSection = () => {
         <motion.div className='mb-10' variants={itemVariants}>
           <h3 className='text-2xl font-semibold mb-4 text-indigo-600'>Eligibility</h3>
           <p className='text-lg text-gray-100'>
-            Federal Horizon Development offers a <span className='font-semibold text-indigo-600'>free membership</span>, which is only obtainable by  completing at least one project with us.
+            FISAT HORIZON CLUB  offers a <span className='font-semibold text-indigo-600'>free membership</span>, which is only obtainable by  completing at least one project with us.
           </p>
         </motion.div>
 
