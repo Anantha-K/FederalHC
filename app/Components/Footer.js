@@ -69,7 +69,7 @@ const Footer = () => {
           <Image src={logo3} width='30' height='30' alt='logo' className='hidden md:flex'></Image>
           </div>
           <div className='md:flex translate-x-20 gap-10 hidden'>
-            <Link href={''}>Instagram</Link>
+            <Link href={'https://www.instagram.com/fisathorizon/'}>Instagram</Link>
             <Link href={''}>Facebook</Link>
             <Link href={''}>X</Link>
           </div>
