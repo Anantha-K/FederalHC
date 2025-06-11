@@ -74,7 +74,7 @@ const Footer = () => {
             <Link href={''}>X</Link>
           </div>
           <div className='flex md:hidden gap-5 mr-16 justify-start items-center '>
-            <Link href={''}><FaInstagram/></Link>
+            <Link href={'https://www.instagram.com/fisathorizon/'}><FaInstagram/></Link>
             <Link href={''}><FaLinkedinIn/> </Link>
             <Link href={''}><FaXTwitter/></Link>
 
